@@ -333,6 +333,27 @@
 #define HREF_GPIO_NUM  42
 #define PCLK_GPIO_NUM  5
 
+#elif defined(CAMERA_MODEL_ESP32_CAM)
+#define PWDN_GPIO_NUM  32    // Camera power-down pin (GPIO32)
+#define RESET_GPIO_NUM 33    // Camera reset pin (GPIO33)
+#define XCLK_GPIO_NUM  0     // External clock pin (GPIO0)
+#define SIOD_GPIO_NUM  21    // I2C SDA pin (GPIO21)
+#define SIOC_GPIO_NUM  22    // I2C SCL pin (GPIO22)
+
+#define Y2_GPIO_NUM  5       // Camera data pin (GPIO5)
+#define Y3_GPIO_NUM  18      // Camera data pin (GPIO18)
+#define Y4_GPIO_NUM  19      // Camera data pin (GPIO19)
+#define Y5_GPIO_NUM  21      // Camera data pin (GPIO21)
+#define Y6_GPIO_NUM  36      // Camera data pin (GPIO36)
+#define Y7_GPIO_NUM  39      // Camera data pin (GPIO39)
+#define Y8_GPIO_NUM  34      // Camera data pin (GPIO34)
+#define Y9_GPIO_NUM  35      // Camera data pin (GPIO35)
+
+#define VSYNC_GPIO_NUM  25   // VSYNC pin (GPIO25)
+#define HREF_GPIO_NUM   23   // HREF pin (GPIO23)
+#define PCLK_GPIO_NUM   22   // PCLK pin (GPIO22)
+
+
 #else
 #error "Camera model not selected"
 #endif
